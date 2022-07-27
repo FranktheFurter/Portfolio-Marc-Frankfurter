@@ -9,18 +9,24 @@
     <MudText Typo="Typo.h5" GutterBottom="false">Mobile & Web Frontend Developer from Germany 🇩🇪</MudText>
 </div>
 <div class="centeringRow" alt="Socials">
-    <MudIconButton Icon="@Icons.Custom.Brands.GitHub" aria-label="github"></MudIconButton>
-    <MudIconButton Icon="@Icons.Custom.Brands.Steam" aria-label="github"></MudIconButton>
-    <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn" aria-label="github"></MudIconButton>
-    <MudIconButton Icon="@Icons.Custom.Brands.Instagram" aria-label="github"></MudIconButton>
-    <MudIconButton Icon="@Icons.Custom.Brands.Reddit" aria-label="github"></MudIconButton>
-    <MudIconButton Icon="@Icons.Custom.Brands.YouTube" aria-label="github"></MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" aria-label="github" class="iconsMarHori">
+    </MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Steam" aria-label="github" class="iconsMarHori">
+    </MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" aria-label="github" class="iconsMarHori">
+    </MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Instagram" aria-label="github" class="iconsMarHori">
+    </MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Reddit" aria-label="github" class="iconsMarHori">
+    </MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.YouTube" aria-label="github" class="iconsMarHori">
+    </MudIconButton>
 </div>
 <MudContainer Fixed="true" class="mt-4">
     <img style="width: 100%;" src="http://ghchart.rshah.org/5B4AE2/FranktheFurter" alt="My Github chart">
 </MudContainer>
-<MudDivider DividerType="DividerType.Middle" Class="my-6" />
-<MudContainer Fixed="true" class="mt-4">
+@* <MudDivider DividerType="DividerType.Middle" Class="my-6" /> *@
+<MudContainer Fixed="true" class="mt-6">
     <MudText Typo="Typo.h5" GutterBottom="false">About Me:</MudText>
 
 </MudContainer>
@@ -33,6 +39,11 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+
+    .iconsMarHori {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     .centeringRow {
