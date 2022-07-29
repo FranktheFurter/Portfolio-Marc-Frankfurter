@@ -5,23 +5,24 @@
     <MudAvatar Image="images/selfie.png" Style="height:20vw; width:20vw; font-size:2rem;" Class="mx-auto" />
 </div>
 <div class="centeringCol">
-    <MudText Typo="Typo.h3" GutterBottom="false">Marc Frankfurter</MudText>
+    <MudText Typo="Typo.h3" GutterBottom="false" class="textFx">Marc Frankfurter</MudText>
     <MudText Typo="Typo.h6" GutterBottom="false">Mobile & Web Frontend Developer from Germany 🇩🇪</MudText>
 </div>
 
 <div class="centeringRow" alt="Socials">
-    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" aria-label="github" class="iconsMarHori">
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" aria-label="github">
     </MudIconButton>
-    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Steam" aria-label="Steam" class="iconsMarHori">
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Steam" aria-label="Steam">
     </MudIconButton>
-    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" aria-label="LinkedIn" class="iconsMarHori">
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" aria-label="LinkedIn">
     </MudIconButton>
-    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Instagram" aria-label="Instagramm" class="iconsMarHori">
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Instagram" aria-label="Instagramm">
     </MudIconButton>
-    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Reddit" aria-label="Reddit" class="iconsMarHori">
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Reddit" aria-label="Reddit">
     </MudIconButton>
-    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.YouTube" aria-label="YouTube" class="iconsMarHori">
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.YouTube" aria-label="YouTube">
     </MudIconButton>
+    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Discord" aria-label="Discord"></MudIconButton>
 </div>
 
 <MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows="false" ShowBullets="false" AutoCycle="true"
@@ -173,10 +174,7 @@
         align-items: center;
     }
 
-    .iconsMarHori {
-        margin-left: 2px;
-        margin-right: 2px;
-    }
+
 
     .centeringRow {
         display: flex;
@@ -185,5 +183,16 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+
+    .textFx {
+        background: url(https://media.giphy.com/media/3o84U78CXEB2opZd4I/giphy.gif);
+        font-size: 12em;
+        text-align: center;
+
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 </style>

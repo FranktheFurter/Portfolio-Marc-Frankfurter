@@ -31,7 +31,6 @@
             "type": "process",
             "args": [
                 "watch",
-                "run",
                 "--project",
                 "${workspaceFolder}/Portfolio.csproj"
             ],
