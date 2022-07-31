@@ -1,213 +1,47 @@
-﻿@page "/"
-<PageTitle>About Me</PageTitle>
-<div class="textFx2">
-    <div class="centeringCol">
-        <MudAvatar Image="images/selfie.png" Style="height:20vw; width:20vw; font-size:2rem;" Class="mx-auto" />
-    </div>
-    <MudText Typo="Typo.h3" GutterBottom="false" class="textFx">Marc Frankfurter</MudText>
+@page "/"
+<div class="bg-1">
+
+    <div class="spacer top-1"></div>
+    <MudPaper class="bg-1 pa-8">
+        <MudText Typo="Typo.h3" GutterBottom="false">Marc Frankfurter</MudText>
+        <MudText Typo="Typo.h6" GutterBottom="false">Mobile & Web Frontend Developer from Germany 🇩🇪</MudText>
+    </MudPaper>
+    <div class="spacer bot-1"></div>
+</div>
+<div class="bg-1">
+
+    <div class="spacer top-1"></div>
+    <MudPaper class="bg-1 pa-8">
+        <MudText Typo="Typo.h3" GutterBottom="false">Marc Frankfurter</MudText>
+        <MudText Typo="Typo.h6" GutterBottom="false">Mobile & Web Frontend Developer from Germany 🇩🇪</MudText>
+    </MudPaper>
 </div>
 
-<div class="centeringCol">
-
-    <MudText Typo="Typo.h6" GutterBottom="false">Mobile & Web Frontend Developer from Germany 🇩🇪</MudText>
-</div>
-<MudContainer MaxWidth="MaxWidth.Large" Class="my-4 pt-4">
-    <div class="centeringRow" alt="Socials">
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" aria-label="github">
-        </MudIconButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Steam" aria-label="Steam">
-        </MudIconButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" aria-label="LinkedIn">
-        </MudIconButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Instagram" aria-label="Instagramm">
-        </MudIconButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Reddit" aria-label="Reddit">
-        </MudIconButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.YouTube" aria-label="YouTube">
-        </MudIconButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Discord" aria-label="Discord"></MudIconButton>
-    </div>
-
-    <MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows="false" ShowBullets="false" AutoCycle="true"
-        TData="object">
-
-
-
-        <MudCarouselItem Transition="Transition.Slide">
-
-            <div class="centeringRow">
-                <img class="mud-width-full" src=" http://ghchart.rshah.org/5B4AE2/FranktheFurter" alt="My Github chart">
-            </div>
-
-        </MudCarouselItem>
-
-        <MudCarouselItem Transition="Transition.Slide">
-            <div class="centeringRow">
-                <img class="mud-width-full" src=" http://ghchart.rshah.org/5B4AE2/FranktheFurter" alt="My Github chart">
-            </div>
-        </MudCarouselItem>
-        <MudCarouselItem Transition="Transition.Slide">
-            <div class="centeringRow">
-                <img class="mud-width-full" src=" http://ghchart.rshah.org/5B4AE2/FranktheFurter" alt="My Github chart">
-            </div>
-        </MudCarouselItem>
-    </MudCarousel>
 
 
 
 
-
-    @* <MudDivider DividerType="DividerType.Middle" Class="my-6" /> *@
-
-    <MudGrid Justify=Justify.FlexStart Style="margin-top: 1em;">
-        <MudItem xs=12 md=7>
-            <MudPaper Class="pa-4">
-                <MudText Typo="Typo.h5" GutterBottom="true">About Me:</MudText>
-                <MudText Typo="Typo.body1" GutterBottom="false">Passionate tinkerer. I always enjoy exchanging ideas
-                    with my team on technical topics. When programming, the most
-                    beautiful thing is to see how the system grows and the individual parts come together.</MudText>
-            </MudPaper>
-
-        </MudItem>
-        <MudItem xs=12 md=5>
-            <MudPaper Class="pa-4">
-                <MudText Typo="Typo.h5" GutterBottom="true">Personal Details:</MudText>
-                <MudText Typo="Typo.body1">89160, Dornstadt</MudText>
-                <MudText Typo="Typo.body1">Germany</MudText>
-                <MudText Typo="Typo.body1">marcfrankfurter@gmail.com</MudText>
-            </MudPaper>
-
-        </MudItem>
-        <MudItem xs=12 md=9>
-            <MudPaper Class="pa-4">
-                <MudText Typo="Typo.h5" GutterBottom="true">Professional Experience:</MudText>
-                <MudText Typo="Typo.body1" GutterBottom="false"></MudText>
-                <MudTimeline TimelineAlign="TimelineAlign.Start" TimelinePosition="TimelinePosition.Start">
-                    <MudTimelineItem Color="Color.Info" Size="Size.Small">
-
-                        <ItemContent>
-                            <MudText Color="Color.Info" Typo="Typo.h6" GutterBottom="false">UX Designer, Elektrobit
-                                Automotive GmbH, Ulm</MudText>
-                            <MudText Color="Color.Info" Typo="Typo.caption" GutterBottom="true">August 2021 - February
-                                2022
-                            </MudText>
-                            <MudText>Entwicklung und Konzeptionalisierung nutzerfreundlicher User Interfaces im
-                                Automotive Bereich. Hybrid System (MIB/Android) und Amazon Alexa Integration. Verwendung
-                                von Design Systemen (Figma, Sketch). Support Entwickler über Git/Jira</MudText>
-                        </ItemContent>
-                    </MudTimelineItem>
-                    <MudTimelineItem Color="Color.Success" Size="Size.Small">
-
-                        <ItemContent>
-                            <MudText Color="Color.Success" Typo="Typo.h6" GutterBottom="false">Operational</MudText>
-                            <MudText Color="Color.Success" Typo="Typo.caption" GutterBottom="false">Operational
-                            </MudText>
-                            <MudText>The first of the Chernobyl Nuclear Power Plants four reactors is ready to operate
-                                followed by number 2 in 1978.</MudText>
-                        </ItemContent>
-                    </MudTimelineItem>
-                    <MudTimelineItem Color="Color.Error" Size="Size.Small">
-
-                        <ItemContent>
-                            <MudText Color="Color.Error" Typo="Typo.h6" GutterBottom="false">Pripyat</MudText>
-                            <MudText Color="Color.Error" Typo="Typo.caption" GutterBottom="false">Pripyat</MudText>
-                            <MudText>Pripyat officially proclaimed as a city.<br />The Chernobyl Atomic Power Station
-                                reaches its first 10 billion kilowatt-hours of electical output.</MudText>
-                        </ItemContent>
-                    </MudTimelineItem>
-                </MudTimeline>
-            </MudPaper>
-
-        </MudItem>
-        <MudItem xs=12 md=3>
-            <MudStack Justify="Justify.SpaceEvenly">
-                <MudPaper Class="pa-4">
-
-                    <MudText Typo="Typo.h5" GutterBottom="true">Code:</MudText>
-                    <MudText>HTML</MudText>
-
-                    <MudText>CSS</MudText>
-
-                    <MudText>Java Script</MudText>
-
-                    <MudText>Dart / Flutter</MudText>
-
-                    <MudText>C#</MudText>
-
-                    <MudText>Java</MudText>
-
-                    <MudText>Haskel</MudText>
-
-                    <MudText>C</MudText>
-
-
-                </MudPaper>
-                <MudPaper Class="pa-4">
-
-                    <MudText Typo="Typo.h5" GutterBottom="true">Tools:</MudText>
-                    <MudText>HTML</MudText>
-
-
-
-
-                </MudPaper>
-                <MudPaper Class="pa-4">
-
-                    <MudText Typo="Typo.h5" GutterBottom="true">Language:</MudText>
-                    <MudText>HTML</MudText>
-
-
-
-
-                </MudPaper>
-
-
-            </MudStack>
-
-        </MudItem>
-    </MudGrid>
-</MudContainer>
-
-
+<div class="spacer bot-1"></div>
 
 <style>
-    .centeringCol {
-        display: flex;
-        flex-direction: column;
-        padding-top: 20em;
-        height: 100%;
+    .spacer {
+        aspect-ratio: 960/300;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-    .centeringRow {
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .textFx {
-        background: url(images/blob5.png);
-        font-size: 12em;
-        text-align: center;
-
+        background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-position: center;
     }
 
-    .textFx2 {
-        background: url(images/blob6.png);
+    .top-1 {
+        background-image: url(svg/top1.svg);
+    }
 
-        background-size: cover;
-        background-attachment: fixed;
+    .bot-1 {
 
+        background-image: url(svg/bot1.svg);
+    }
+
+    .bg-1 {
+        background-color: #001220;
     }
 </style>

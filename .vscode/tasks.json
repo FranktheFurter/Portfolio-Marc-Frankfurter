@@ -26,9 +26,12 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "watch",
+            "label": "watch HotReload",
             "command": "dotnet",
             "type": "process",
+            "icon": {
+                "id": "debug-breakpoint"
+            },
             "args": [
                 "watch",
                 "--project",
