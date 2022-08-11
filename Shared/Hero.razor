@@ -1,33 +1,51 @@
 <PageTitle>About Me</PageTitle>
 <div class="about-me">
-    <MudStack Justify="Justify.Center" Spacing="2">
-        <MudAvatar Image="images/selfie.png" Class="mx-auto mt-16" Style="height:20vw; width:20vw; font-size:2rem;" />
-        <MudText Typo="Typo.h3" GutterBottom="false" Class="px-10 ">
-            Marc Frankfurter
-        </MudText>
-        <MudText Typo="Typo.h5" GutterBottom="false" Class="mb-16 px-10">
-            Mobile & Web Frontend Developer from Germany 🇩🇪
-        </MudText>
-        <MudStack Row="true" Justify="Justify.Center">
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" aria-label="github">
-            </MudIconButton>
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Steam" aria-label="Steam">
-            </MudIconButton>
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" aria-label="LinkedIn">
-            </MudIconButton>
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Instagram" aria-label="Instagramm">
-            </MudIconButton>
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Reddit" aria-label="Reddit">
-            </MudIconButton>
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.YouTube" aria-label="YouTube">
-            </MudIconButton>
-            <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Discord" aria-label="Discord">
+    <MudStack Row="true" Justify="Justify.Center">
+        @* LEFT *@
+        <div Class="pa-8 my-8 blur-container mud-elevation-5">
+            <MudStack Justify="Justify.Center" Spacing="8">
+                <MudAvatar Image="images/selfie.png" Class="mx-auto mt-16"
+                    Style="height:20vw; width:20vw; font-size:2rem;" />
+                <MudText Typo="Typo.h3" Align="Align.Center">Marc Frankfurter</MudText>
+                <MudText Typo="Typo.h6" Align="Align.Center">
+                    Mobile & Web Frontend Developer from Germany 🇩🇪
+                </MudText>
+                <MudStack Row="true" Justify="Justify.Center">
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.GitHub" aria-label="github">
+                    </MudIconButton>
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Steam" aria-label="Steam">
+                    </MudIconButton>
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.LinkedIn" aria-label="LinkedIn">
+                    </MudIconButton>
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Instagram" aria-label="Instagramm">
+                    </MudIconButton>
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Reddit" aria-label="Reddit">
+                    </MudIconButton>
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.YouTube" aria-label="YouTube">
+                    </MudIconButton>
+                    <MudIconButton Size="Size.Large" Icon="@Icons.Custom.Brands.Discord" aria-label="Discord">
 
-            </MudIconButton>
-        </MudStack>
+                    </MudIconButton>
+                </MudStack>
+                <MudStack Row="true" Justify="Justify.Center">
+                    <div class="mud-theme-primary py-4 px-6 mx-4 rounded-pill mud-elevation-2">
+                        <MudText Align="Align.Center">Get in contact</MudText>
+                    </div>
+
+                </MudStack>
+            </MudStack>
+        </div>
+        @* RIGHT *@
     </MudStack>
+
 </div>
 
 <style>
     .about-me {}
+
+    .blur-container {
+        backdrop-filter: blur(100px);
+        border-radius: 75px;
+        background-color: rgba(128, 128, 128, 0.1);
+    }
 </style>
